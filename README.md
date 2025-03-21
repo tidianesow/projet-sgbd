@@ -25,17 +25,14 @@ Ce projet est le backend d'une plateforme d'exercices éducatifs permettant aux 
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/<ton-utilisateur>/<ton-repo>.git
-cd <ton-repo>
+git clone https://github.com/tidianesow/projet-sgbd/edit/backend/.git
+cd projet-sgbd
 ```
 
 ### 2. Créer un environnement virtuel et installer les dépendances
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # Sous Windows : venv\Scripts\activate
-pip install -r requirements.txt
-```
+npm run dev 
 
 ### 3. Configurer l’environnement
 
@@ -78,13 +75,8 @@ ALTER ROLE postgres SET timezone TO 'UTC';
 GRANT ALL PRIVILEGES ON DATABASE db_exercise_platform TO postgres;
 ```
 
-Appliquer les migrations Django :
 
-```bash
-python manage.py migrate
-```
-
-### 5. Configurer MinIO
+### 4. Configurer MinIO
 
 Télécharger et lancer MinIO :
 
@@ -115,19 +107,6 @@ Lancer le serveur Ollama :
 ollama serve &
 ```
 
-### 7. Lancer le serveur Django
-
-En mode développement :
-
-```bash
-python manage.py runserver
-```
-
-En mode production (avec Gunicorn) :
-
-```bash
-gunicorn exercise_platform.wsgi:application --bind 0.0.0.0:8000
-```
 
 ## Contribution
 
