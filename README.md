@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎓 Plateforme intelligente d'évaluation automatisée – Frontend
 
-## Getting Started
+Ce projet est le frontend de la plateforme intelligente d’évaluation automatisée des exercices de bases de données. Il permet aux professeurs de déposer des sujets et aux étudiants de soumettre leurs réponses, avec une correction assistée par intelligence artificielle.
+🚀 Technologies utilisées
 
-First, run the development server:
+    React.js – Framework JavaScript pour le frontend
+    Vite – Outil de build rapide pour React
+    Tailwind CSS – Stylisation moderne et responsive
+    Recharts / Chart.js – Visualisation des performances des étudiants
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+📌 Prérequis
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Avant de commencer, assure-toi d’avoir :
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    Node.js installé (v16+ recommandé)
+    npm ou yarn pour gérer les dépendances
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🛠️ Installation et exécution
 
-## Learn More
+    Cloner le projet
 
-To learn more about Next.js, take a look at the following resources:
+git clone https://github.com/ton-utilisateur/plateforme-evaluation-frontend.git
+cd plateforme-evaluation-frontend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Installer les dépendances
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm install
+# ou
+yarn install
 
-## Deploy on Vercel
+Lancer l’application en mode développement
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    Accéder à l’application
+    Ouvre http://localhost:3000 dans ton navigateur.
+
+📂 Structure du projet
+
+/src
+  ├── components/    # Composants réutilisables
+  ├── pages/         # Pages principales de l'application
+  ├── styles/        # Styles avec Tailwind CSS
+  ├── assets/        # Images et icônes
+  ├── App.jsx        # Composant principal
+  ├── main.jsx       # Point d’entrée React
+  ├── config/        # Configuration (ex: API endpoints)
+
+✨ Fonctionnalités principales
+
+✅ Authentification sécurisée (Google, Microsoft, GitHub)
+✅ Dépôt et soumission des exercices
+✅ Correction automatique et feedback personnalisé
+✅ Tableaux de bord interactifs pour suivi des performances
+✅ Interface moderne avec mode sombre
+🚀 Déploiement
+
+Le frontend peut être facilement déployé sur Vercel, Netlify ou un VPS avec Docker.
+
+    Construire le projet
+
+npm run build
+
+Déployer avec Vercel
+
+    vercel deploy
+
+📚 Ressources utiles
+
+    📖 Documentation React
+    🎨 Documentation Tailwind CSS
+    🚀 Vite.js
+
+💡 Contributions et améliorations sont les bienvenues ! 😊
